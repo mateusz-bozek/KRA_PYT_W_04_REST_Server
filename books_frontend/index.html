@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Books</title>
+    <style>
+        table, th, td {
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        th {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        <h3>Dodaj Książkę</h3>
+        <form id="addBookForm">
+            <p><input type="text" name="author" placeholder="Author"></input></p>
+            <p><input type="text" name="title" placeholder="Tile"></input></p>
+            <p><input type="text" name="isbn" placeholder="ISBN"></input></p>
+            <p><input type="text" name="publisher" placeholder="Publisher"></input></p>
+            <p>
+                <select name="genre">
+                    <option value="1">Romans</option>
+                    <option value="2">Obyczajowa</option>
+                    <option value="3">Sci-fi i fantasy</option>
+                    <option value="4">Literatura faktu</option>
+                    <option value="5">Popularnonaukowa</option>
+                    <option value="6">Poradnik</option>
+                    <option value="7">Kryminał, sensacja</option>
+                </select>
+            </p>
+            <input type="submit" value="Dodaj">
+        </form>
+    </p>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tytuł</th>
+                <th>Autor</th>
+                <th>ISBN</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/books-api-client.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
